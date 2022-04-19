@@ -1,0 +1,180 @@
+/* настройка цветов */
+
+:root {
+        --c-accent: #6366f1;
+        --c-main: #3e4265;
+        --c-hover:#0d6efd;
+}
+
+.vr {
+    opacity: 1;
+}
+
+.c-accent {
+    color: var(--c-accent);
+}
+
+.bg-accent {
+    background-color: var(--c-accent);
+    color: #fff;
+}
+
+/* основные настройки */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--c-main);
+}
+
+a {
+    color: var(--c-main);
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--c-accent);
+}
+
+p {
+    font-weight: 400;
+}
+
+footer a {
+    font-weight: 300;
+}
+
+/* скругление */
+
+.rounded {
+    border-radius: 0.5rem!important;
+}
+
+/* элементы хедера */
+
+.nav-link.active {
+    color: var(--c-accent)!important;
+}
+
+.nav-link {
+    color: var(--c-main)!important;
+    
+}
+
+.nav-link:hover {
+    color: var(--c-accent)!important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+
+/* выпадающие списки */
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item {
+    color: var(--c-main);
+    background: #fff;
+}
+
+.dropdown-item:hover {
+    color: var(--c-accent);
+    background: #fff;
+}
+
+.dropdown-menu.show {
+    display: none;
+}
+
+.dropdown:hover .show {
+    display: block;
+}
+
+.dropdown i {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 991px){
+    .dropdown-menu{
+        border-left: 2px #ECEFF1 solid;
+    }
+
+	.dropdown .shadow {
+        box-shadow: 0 0 0 0!important;
+    }
+
+    .dropdown .rounded {
+        border-radius: 0!important;
+    }
+}
+
+/* кнопки */
+
+.btn-main {
+    background-color: var(--c-accent);
+    color: #fff;
+}
+
+.btn-second {
+    border: 2px solid var(--c-accent);
+    color: var(--c-accent);
+}
+
+.btn-hover:hover{
+    background-color: var(--c-hover);
+    color: #fff;
+    border-color: var(--c-hover);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* скрытие в моб. верии разделителя из блока как это работает */
+
+@media (max-width: 767px) {
+    #how-it-work .vr{
+        display:none;
+    }
+}
+
+/* настройка карточек преимущест */
+
+.case-box img{
+    margin: 1rem 0;
+    width: 32px;
+    height: auto;
+    transition: .15s ease-in-out;
+}
+
+
+.case-box:hover img {
+    margin: .8rem 0 .95rem;
+    width: 36px;
+}
+
+/* карусель */
+
+.feedback-box img {
+    width: 80px!important;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    margin: 0 68px;
+    color: var(--c-accent)!important;
+    font-size: 3rem;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+    background: 0;
+}
+
+.owl-dots {
+    margin-top: -42px;
+}
+
+.owl-stage {
+    transition: all 1s cubic-bezier(.25,.8,.25,1)!important;
+}
