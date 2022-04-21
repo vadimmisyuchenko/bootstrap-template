@@ -2,12 +2,12 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:4000, /*скорость авто смены блоко в карусели  */
+    autoplayTimeout:4000, /* speed slide */
     autoplayHoverPause:true,
     nav:true,
     responsive:{
         0:{
-            items:1  /* количество отобр. карточек при разных разрешениях экрана*/
+            items:1
         },
         600:{
             items:2
